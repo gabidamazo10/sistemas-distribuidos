@@ -101,7 +101,7 @@
   <li> Order_list
   
   ```
-  {OID:NAME-{NAME:CAPACITY}
+  {OID:NAME-{PID:CAPACITY}
   ```
   
   CID: client id </br>
