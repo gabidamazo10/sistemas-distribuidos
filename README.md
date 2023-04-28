@@ -82,6 +82,33 @@
   <li> Os testes estão localizados na pasta Testes-Etapa01 do repositório.
   
 </ul>
+
+## Formato dos Dicionários usados em python
+<ul>
+
+  <li> Client_list
+  
+  ```
+  {CID:NAME}
+  ```
+  
+  <li> Product_list
+  
+  ```
+  {PID:{NAME:CAPACITY}
+  ```
+  
+  <li> Order_list
+  
+  ```
+  {OID:NAME-{NAME:CAPACITY}
+  ```
+  
+  CID: client id </br>
+  PID: product id </br>
+  OID: order id
+</ul>
+
  
 ## Referências utilizadas
 
