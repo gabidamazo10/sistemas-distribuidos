@@ -79,7 +79,7 @@
   <li> Foi utilizado um broker online para o MQTT: broker.emqx.io
   <li> Os servers devem ser inicalizados em portas diferentes. Assim como os clients, de forma que cada client acompanhe o server, pela porta.
   <li> TODOS os servers devem ser inicializados antes de acionar os clients.
-  <li> Os testes estão localizados na pasta TESTES do repositório.
+  <li> Os testes estão localizados na pasta Testes-Etapa01 do repositório.
   
 </ul>
  
