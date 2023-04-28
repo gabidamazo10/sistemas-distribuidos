@@ -68,6 +68,10 @@
 
 ## Link para vídeo com compilação e execução
 
+<ul>
+ <li> https://youtu.be/ydkNSQzpW-U
+</ul>
+
 ## Informações adicionais
 
 <ul>
