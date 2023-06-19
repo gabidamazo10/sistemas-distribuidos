@@ -1,0 +1,224 @@
+################
+### CLIENTES ###
+################
+
+--------------------------
+# INSERCAO DE CLIENTE #
+
+# SUCESSO
+
+Escolha (1) - ADMIN PORTAL
+NAME: Beltrano
+CID: 1
+
+Escolha (1) - ADMIN PORTAL
+NAME: Ciclano
+CID: 2
+
+Escolha (1) - ADMIN PORTAL
+NAME: Fulano
+CID: 3
+
+# FALHA
+
+Escolha (1) - ADMIN PORTAL
+NAME: Deltrano
+CID: 1
+
+---------------------------
+# RECUPERACAO DE CLIENTE #
+
+# SUCESSO
+
+Escolha (2) - ADMIN PORTAL
+CID: 2
+
+# FALHA
+
+Escolha (2) - ADMIN PORTAL
+CID: 4
+
+--------------------------
+# MODIFICACAO DE CLIENTE #
+
+# SUCESSO
+
+Escolha (3) - ADMIN PORTAL
+CID: 2
+NEW NAME: Paulo
+ 
+# FALHA 
+
+Escolha (3) - ADMIN PORTAL
+CID: 4
+
+------------------------
+# REMOCAO DE CLIENTE #
+
+# SUCESSO
+
+Escolha (4) - ADMIN PORTAL
+CID: 2
+
+# FALHA
+
+Escolha (4) - ADMIN PORTAL
+CID: 2 (Depois de ter deletado o 2)
+NAO ENCONTRADO
+
+
+################
+### PRODUTOS ###
+################
+
+------------------------
+# INSERCAO DE PRODUTO #
+
+# SUCESSO
+
+Escolha (5) - ADMIN PORTAL
+NAME: Banana 
+PID: 10
+CAPACITY: 100
+
+Escolha (5) - ADMIN PORTAL
+NAME: Carambola 
+PID: 11
+CAPACITY: 100
+
+Escolha (5) - ADMIN PORTAL
+NAME: Figo 
+PID: 12
+CAPACITY: 100
+
+# FALHA
+
+Escolha (5) - ADMIN PORTAL
+NAME: Graviola
+PID: 12
+QUANTITY: 50
+
+---------------------------
+# MODIFICACAO DE PRODUTO #
+
+# SUCESSO
+
+Escolha (7) - ADMIN PORTAL
+PID: 11
+NEW NAME: Goiaba
+NEW CAPACITY: 100
+
+# FALHA
+
+Escolha (7) - ADMIN PORTAL
+PID: 15
+NOT FOUND IN DATABASE
+
+----------------------------
+# RECUPERACAO DE PRODUTO #
+
+# SUCESSO
+
+Escolha (6) - ADMIN PORTAL
+PID: 12
+
+# FALHA
+
+Escolha (6) - ADMIN PORTAL
+PID: 15
+NOT FOUND IN DATABASE
+
+-----------------------
+# REMOCAO DE PRODUTO #
+
+# SUCESSO
+
+Escolha (8) - ADMIN PORTAL
+PID: 12
+
+# FALHA
+
+Apagar o 12 mais uma vez
+
+Escolha (8) - ADMIN PORTAL
+PID: 12
+NOT FOUND IN DATABASE
+
+###############
+### PEDIDOS ###
+###############
+
+----------------------
+# INSERCAO DE PEDIDO #
+
+# SUCESSO
+
+Escolha (1) - ORDER PORTAL
+CID: 1
+OID: 101
+
+PID: 11
+QUANTITY: 30
+
+
+# FALHA
+
+Cliente nao existe
+Escolha (1) - ORDER PORTAL
+CID: 5
+OID: 150
+
+PID: 10
+QUANTITY: 10
+
+----------------------
+# RECUPERACAO DE PEDIDO #
+
+# SUCESSO
+
+Escolha (2) - ORDER PORTAL
+CID: 1
+OID: 101
+
+# FALHA
+
+Pedido nao existente
+Escolha (2) - ORDER PORTAL
+CID: 1
+OID: 105
+
+----------------------
+# MOFICACAO DE PEDIDO #
+
+# SUCESSO
+
+Escolha (3) - ORDER PORTAL
+CID: 1
+OID: 101
+PRODUCT PID: 11
+NEW QUANTITY: 0
+
+# FALHA
+
+Erro quantidade pedida de produtos maior que a existente no banco da dados
+Escolha (3) - ORDER PORTAL
+CID: 1
+OID: 101
+PRODUCT PID: 11
+NEW QUANTITY: 1000
+
+----------------------
+# REMOCAO DE PEDIDO #
+
+# SUCESSO
+
+Escolha (4) - ORDER PORTAL
+CID: 1
+OID: 101
+
+# FALHA
+
+Tentativa falha de deletar um pedido que ja havia sido deletado
+Escolha (4) - ORDER PORTAL
+CID: 2
+OID: 102
